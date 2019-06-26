@@ -1,5 +1,6 @@
-server.port: 8081
-welcome-message: ${WELCOME_MESSAGE:"Default welcome message to FE"}
 data-config:
-  my-array-data: aaa, bbb
-  my-list-data: ccc, ddd
+  list-with-one-item: x
+  services-array: a, aa
+  services-list: b, bb, bc
+  
+  
