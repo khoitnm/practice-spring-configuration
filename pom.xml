@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>pro01-on-condition</module>
+        <module>pro01-conditional-config</module>
     </modules>
 
     <properties>

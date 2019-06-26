@@ -1,4 +1,4 @@
-package org.tnmk.practicespringconfiguration.pro01oncondition.config;
+package org.tnmk.practicespringconfiguration.pro01conditionalconfig.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
