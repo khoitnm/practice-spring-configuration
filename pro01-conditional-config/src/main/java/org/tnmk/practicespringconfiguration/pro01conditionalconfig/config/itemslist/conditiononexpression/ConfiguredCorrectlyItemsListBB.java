@@ -4,6 +4,6 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-//@ConditionalOnExpression("#{'${items-list.services}'.contains('bc')}")
-public class NotConfiguredItemsListC {
+//@ConditionalOnExpression("#{@itemsListPropertiesB.services.contains('bc')}")
+public class ConfiguredCorrectlyItemsListBB {
 }

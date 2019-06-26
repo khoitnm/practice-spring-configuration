@@ -15,16 +15,20 @@ import org.tnmk.practicespringconfiguration.pro01conditionalconfig.config.itemsl
 public class ItemsListTest {
 
     @Autowired
-    @Qualifier("itemsListProperties")
-    private ItemsListProperties itemsListProperties;
+    @Qualifier("itemsListPropertiesA")
+    private ItemsListProperties itemsListPropertiesA;
+
+    @Autowired
+    @Qualifier("itemsListPropertiesB")
+    private ItemsListProperties itemsListPropertiesB;
 
 
 
 
     @Test
     public void testCanLoadArrayAndListFromConfiguration() {
-        Assert.assertNotNull(itemsListProperties.getObject());
-
+        Assert.assertNotNull(itemsListPropertiesA.getServices().contains("a"));
+        Assert.assertNotNull(itemsListPropertiesB.getServices().contains("b"));
     }
 
 }

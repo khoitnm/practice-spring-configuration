@@ -3,11 +3,14 @@ items-from-string:
   services-array: a, aa
   services-list: b, bb, bc
   
-items-list:
+items-list-a:
   services:
     - a
-    - b
-    - bc
+    - aaa
   
+items-list-b:
+  services:
+    - b
+    - bbb
   
   

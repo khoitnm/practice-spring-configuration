@@ -7,9 +7,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class PropertiesConfig {
 
-    @Bean(name = "itemsListProperties")
-    @ConfigurationProperties("items-list")
-    public ItemsListProperties itemsListProperties() {
+    @Bean
+    @ConfigurationProperties("items-list-a")
+    public ItemsListProperties itemsListPropertiesA() {
+        return new ItemsListProperties();
+    }
+
+    @Bean
+    @ConfigurationProperties("items-list-b")
+    public ItemsListProperties itemsListPropertiesB() {
         return new ItemsListProperties();
     }
 }
