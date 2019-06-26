@@ -6,10 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.tnmk.practicespringconfiguration.pro01oncondition.config.DataProperties;
-import org.tnmk.practicespringconfiguration.pro01oncondition.config.NotConfiguredServiceC;
-import org.tnmk.practicespringconfiguration.pro01oncondition.config.ServiceArrayA;
-import org.tnmk.practicespringconfiguration.pro01oncondition.config.ServiceListB;
+import org.tnmk.practicespringconfiguration.pro01oncondition.config.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Pro01OnConditionApplication.class)
@@ -27,6 +24,9 @@ public class ConfigurationTest {
     @Autowired(required = false)
     private NotConfiguredServiceC notConfiguredServiceC;
 
+    @Autowired(required = false)
+    private ConfiguredByAccidentServiceC configuredByAccidentServiceC;
+
 
     @Test
     public void testCanLoadListWithOneItem() {
@@ -35,8 +35,14 @@ public class ConfigurationTest {
 
     @Test
     public void testCanLoadArrayAndListFromConfiguration() {
+
+
         Assert.assertArrayEquals(new String[]{"a", "aa"}, dataProperties.getServicesArray());
         Assert.assertEquals(3, dataProperties.getServicesList().size());
+        Assert.assertEquals("b, bb, bc", dataProperties.getServicesListString());
+        Assert.assertEquals(3, dataProperties.getServicesListParseByValueAnnotation().size());
+
+
     }
 
     @Test
@@ -46,6 +52,8 @@ public class ConfigurationTest {
         Assert.assertNotNull(serviceListB);
 
         Assert.assertNull(notConfiguredServiceC);
+
+        Assert.assertNotNull(configuredByAccidentServiceC);
     }
 
 }

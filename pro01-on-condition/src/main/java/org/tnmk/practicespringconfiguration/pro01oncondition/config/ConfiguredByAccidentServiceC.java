@@ -4,6 +4,6 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnExpression;
 import org.springframework.stereotype.Service;
 
 @Service
-@ConditionalOnExpression("#{T(java.util.Arrays).asList('${data-config.services-list}').contains('c')}")
-public class NotConfiguredServiceC {
+@ConditionalOnExpression("'${data-config.services-list}'.contains('c')")
+public class ConfiguredByAccidentServiceC {
 }
