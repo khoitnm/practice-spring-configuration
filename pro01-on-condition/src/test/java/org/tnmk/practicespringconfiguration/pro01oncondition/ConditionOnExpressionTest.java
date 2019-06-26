@@ -6,14 +6,11 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.tnmk.practicespringconfiguration.pro01oncondition.config.*;
+import org.tnmk.practicespringconfiguration.pro01oncondition.service.conditiononexpression.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Pro01OnConditionApplication.class)
-public class ConfigurationTest {
-
-    @Autowired
-    private DataProperties dataProperties;
+public class ConditionOnExpressionTest {
 
     @Autowired(required = false)
     private ServiceArrayA serviceArrayA;
@@ -29,23 +26,6 @@ public class ConfigurationTest {
 
     @Autowired(required = false)
     private ConfiguredServiceBC configuredServiceBC;
-
-    @Test
-    public void testCanLoadListWithOneItem() {
-        Assert.assertEquals("x", dataProperties.getListWithOneItem().get(0));
-    }
-
-    @Test
-    public void testCanLoadArrayAndListFromConfiguration() {
-
-
-        Assert.assertArrayEquals(new String[]{"a", "aa"}, dataProperties.getServicesArray());
-        Assert.assertEquals(3, dataProperties.getServicesList().size());
-        Assert.assertEquals("b, bb, bc", dataProperties.getServicesListString());
-        Assert.assertEquals(3, dataProperties.getServicesListParseByValueAnnotation().size());
-
-
-    }
 
     @Test
     public void testConditionalOnExpression() {
