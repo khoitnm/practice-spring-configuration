@@ -1,4 +1,4 @@
-package org.tnmk.practicespringconfiguration.pro01conditionalconfig.config;
+package org.tnmk.practicespringconfiguration.pro01conditionalconfig.config.itemsfromstring;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -7,8 +7,8 @@ import org.springframework.context.annotation.Configuration;
 import java.util.List;
 
 @Configuration
-@ConfigurationProperties(prefix = "data-config")
-public class DataProperties {
+@ConfigurationProperties(prefix = "items-from-string")
+public class ItemsFromStringProperties {
 
     private List<String> listWithOneItem;
 
@@ -19,10 +19,10 @@ public class DataProperties {
     /**
      * When we use {@link Value}, the {@link ConfigurationProperties#prefix()} will be ignored.
      */
-    @Value("${data-config.services-list}")
+    @Value("${items-from-string.services-list}")
     private String servicesListString;
 
-    @Value("#{T(java.util.Arrays).asList('${data-config.services-list}')}")
+    @Value("#{T(java.util.Arrays).asList('${items-from-string.services-list}')}")
     private List<String> servicesListParseByValueAnnotation;
 
     public String[] getServicesArray() {

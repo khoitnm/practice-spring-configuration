@@ -1,6 +1,13 @@
-data-config:
+items-from-string:
   list-with-one-item: x
   services-array: a, aa
   services-list: b, bb, bc
+  
+items-list:
+  services:
+    - a
+    - b
+    - bc
+  
   
   
