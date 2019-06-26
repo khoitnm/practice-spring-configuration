@@ -27,6 +27,8 @@ public class ConfigurationTest {
     @Autowired(required = false)
     private ConfiguredByAccidentServiceC configuredByAccidentServiceC;
 
+    @Autowired(required = false)
+    private ConfiguredServiceBC configuredServiceBC;
 
     @Test
     public void testCanLoadListWithOneItem() {
@@ -54,6 +56,8 @@ public class ConfigurationTest {
         Assert.assertNull(notConfiguredServiceC);
 
         Assert.assertNotNull(configuredByAccidentServiceC);
+
+        Assert.assertNotNull(configuredServiceBC);
     }
 
 }
