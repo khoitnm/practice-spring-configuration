@@ -2,10 +2,11 @@ package org.tnmk.practicespringconfiguration.pro01conditionalconfig.config.items
 
 import org.springframework.stereotype.Service;
 
-
 @Service
 //I assume that this expression should work. But somehow it shows error cannot find the bean 'itemsListPropertiesB'.
 //It's weird because that bean is created inside PropertiesConfig.
-//@ConditionalOnExpression("#{@itemsListPropertiesB.services.contains('bbb')}")
+//@ConditionalOnExpression("#{@itemsListPropertiesB.services.contains('bbb')}") //Doesn't work: cannot find the bean 'itemsListPropertiesB'
+//@ConditionalOnProperty(name = "items-list-b.services", havingValue = "bbb") //Doesn't work
+//@ConditionalOnExpression("#{T(java.util.Arrays).asList('${items-list-b.services-list}').contains('bbb')}") //Doesn't work
 public class ConfiguredCorrectlyItemsListBBB {
 }
