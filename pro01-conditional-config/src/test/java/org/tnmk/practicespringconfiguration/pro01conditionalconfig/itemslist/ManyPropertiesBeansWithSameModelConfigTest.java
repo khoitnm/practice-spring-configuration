@@ -12,7 +12,7 @@ import org.tnmk.practicespringconfiguration.pro01conditionalconfig.config.itemsl
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = Pro01ConditionalConfigApplication.class)
-public class ItemsListTest {
+public class ManyPropertiesBeansWithSameModelConfigTest {
 
     @Autowired
     @Qualifier("itemsListPropertiesA")
@@ -22,13 +22,10 @@ public class ItemsListTest {
     @Qualifier("itemsListPropertiesB")
     private ItemsListProperties itemsListPropertiesB;
 
-
-
-
     @Test
-    public void testCanLoadArrayAndListFromConfiguration() {
-        Assert.assertNotNull(itemsListPropertiesA.getServices().contains("a"));
+    public void testCanLoadDifferentPropertiesBeansWithTheSameDataStructure() {
         Assert.assertNotNull(itemsListPropertiesB.getServices().contains("b"));
+        Assert.assertNotNull(itemsListPropertiesA.getServices().contains("a"));
     }
 
 }

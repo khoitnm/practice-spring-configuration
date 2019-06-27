@@ -6,7 +6,7 @@ import java.util.List;
 //@ConfigurationProperties(prefix = "items-list")
 public class ItemsListProperties {
 
-//    @Value("#{items-list.services}}")
+//    @Value("${items-list-b.services}")
     private Object object;
 
     private List<String> services;

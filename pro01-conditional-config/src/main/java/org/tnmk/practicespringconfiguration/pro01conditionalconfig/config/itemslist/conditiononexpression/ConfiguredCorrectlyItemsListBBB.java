@@ -8,5 +8,9 @@ import org.springframework.stereotype.Service;
 //@ConditionalOnExpression("#{@itemsListPropertiesB.services.contains('bbb')}") //Doesn't work: cannot find the bean 'itemsListPropertiesB'
 //@ConditionalOnProperty(name = "items-list-b.services", havingValue = "bbb") //Doesn't work
 //@ConditionalOnExpression("#{T(java.util.Arrays).asList('${items-list-b.services-list}').contains('bbb')}") //Doesn't work
+/**
+ * @deprecated Have not figured out how to configured with CondictionalOnXxx yet.
+ */
+@Deprecated
 public class ConfiguredCorrectlyItemsListBBB {
 }
