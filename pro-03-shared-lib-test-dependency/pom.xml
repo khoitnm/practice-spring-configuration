@@ -15,6 +15,7 @@
     <modules>
         <module>shared-lib</module>
         <module>main</module>
+        <module>shared-lib-test</module>
     </modules>
 
 
