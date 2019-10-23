@@ -11,6 +11,7 @@
     <modules>
         <module>pro01-conditional-config</module>
         <module>pro02-import-dependency-with-bean</module>
+        <module>pro-03-shared-lib-test-dependency</module>
     </modules>
 
     <properties>
