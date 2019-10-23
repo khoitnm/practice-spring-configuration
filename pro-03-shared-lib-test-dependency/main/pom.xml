@@ -27,12 +27,23 @@
             <artifactId>shared-lib</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <!-- TODO some how it doesn't work? -->
         <dependency>
             <groupId>org.tnmk.skeleton.practicespringconfiguration.pro03sharedlibtest</groupId>
-            <artifactId>shared-lib-test</artifactId>
+            <artifactId>shared-lib</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+            <classifier>tests</classifier>
+            <type>test-jar</type>
             <scope>test</scope>
         </dependency>
+
+        <!--        <dependency>-->
+        <!--            <groupId>org.tnmk.skeleton.practicespringconfiguration.pro03sharedlibtest</groupId>-->
+        <!--            <artifactId>shared-lib-test</artifactId>-->
+        <!--            <version>0.0.1-SNAPSHOT</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
         <!-- SPRING BOOT -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

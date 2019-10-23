@@ -17,7 +17,7 @@ public class SampleSharedServiceTestImpl implements SampleSharedService {
 
     @Override
     public String hello() {
-        String message = "Hello TEST in separated module. SampleSharedServiceImpl " + this;
+        String message = "Hello TEST in test package. SampleSharedServiceImpl " + this;
         logger.info(message);
         return message;
     }
