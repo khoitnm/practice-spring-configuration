@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.module02.SampleSharedServiceImpl\
+  ,org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.module02.sampledependent.SampleDependentComponent\
+  ,org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.module02.sampleindependent.SampleIndependentComponent\
