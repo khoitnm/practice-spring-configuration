@@ -36,12 +36,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.tnmk.skeleton.practicespringconfiguration.pro03module01</groupId>
-            <artifactId>module-02</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot</artifactId>
             <scope>provided</scope>

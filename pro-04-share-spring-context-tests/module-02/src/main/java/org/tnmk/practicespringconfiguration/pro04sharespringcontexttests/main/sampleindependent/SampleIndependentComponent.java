@@ -1,4 +1,4 @@
-package org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.module02.sampleindependent;
+package org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.main.sampleindependent;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

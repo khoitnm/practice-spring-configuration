@@ -1,10 +1,10 @@
-package org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.module02;
+package org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.main;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.module02.sampledependent.SampleDependentComponent;
+import org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.main.sampledependent.SampleDependentComponent;
 
 import java.lang.invoke.MethodHandles;
 

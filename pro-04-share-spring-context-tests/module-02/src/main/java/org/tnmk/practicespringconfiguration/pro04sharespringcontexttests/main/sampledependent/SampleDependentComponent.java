@@ -1,7 +1,7 @@
-package org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.module02.sampledependent;
+package org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.main.sampledependent;
 
 import org.springframework.stereotype.Component;
-import org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.module02.SampleSharedServiceImpl;
+import org.tnmk.practicespringconfiguration.pro04sharespringcontexttests.main.SampleSharedServiceImpl;
 
 /**
  * This class is used to illustrate a dependency service which is used by {@link SampleSharedServiceImpl}
