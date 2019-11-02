@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>org.tnmk.skeleton.practicespringconfiguration.pro03module01</groupId>
+    <groupId>org.tnmk.skeleton.practicespringconfiguration.pro04sharespringcontexttests</groupId>
     <artifactId>main</artifactId>
 
     <properties>
@@ -23,12 +23,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.tnmk.skeleton.practicespringconfiguration.pro03module01</groupId>
+            <groupId>org.tnmk.skeleton.practicespringconfiguration.pro04sharespringcontexttests</groupId>
             <artifactId>module-02</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.tnmk.skeleton.practicespringconfiguration.pro03module01</groupId>
+            <groupId>org.tnmk.skeleton.practicespringconfiguration.pro04sharespringcontexttests</groupId>
             <artifactId>module-01</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>test</scope>

@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.tnmk.skeleton.practicespringconfiguration.pro03module01</groupId>
+    <groupId>org.tnmk.skeleton.practicespringconfiguration.pro04sharespringcontexttests</groupId>
     <artifactId>module-01</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
