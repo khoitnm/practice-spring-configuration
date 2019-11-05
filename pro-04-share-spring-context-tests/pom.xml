@@ -14,8 +14,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>main</module>
-        <module>module-01</module>
-        <module>module-02</module>
     </modules>
 
 
