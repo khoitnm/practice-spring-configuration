@@ -1,0 +1,6 @@
+simple:
+  valA: aaa
+  'valB:': bbb
+
+abc:
+  def: true
