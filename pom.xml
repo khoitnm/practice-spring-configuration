@@ -12,7 +12,6 @@
         <module>pro00-simple-config</module>
         <module>pro01-conditional-config</module>
         <module>pro02-import-dependency-with-bean</module>
-        <module>pro-03-shared-lib-test-dependency</module>
         <module>pro-04-share-spring-context-tests</module>
 
     </modules>
