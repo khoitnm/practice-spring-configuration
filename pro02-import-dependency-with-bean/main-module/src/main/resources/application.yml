@@ -1,1 +1,3 @@
-application.properties: Main Module
+spring.profiles.include: >
+  sharedmodule
+sample-config.value: Main Module

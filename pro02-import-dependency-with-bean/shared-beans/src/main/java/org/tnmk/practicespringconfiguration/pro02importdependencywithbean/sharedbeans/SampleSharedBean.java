@@ -13,15 +13,16 @@ import java.lang.invoke.MethodHandles;
 public class SampleSharedBean {
   private static final Logger logger =
       LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
-  @Value("${sample-config.value}")
-  private String sampleConfigValue;
 
-  public SampleSharedBean() {
-    logger.info("Constructor SampleSharedBean {}", this, sampleConfigValue);
+  private final String sampleConfigValue;
+
+  public SampleSharedBean(@Value("${sample-config.value}") String sampleConfigValue) {
+    this.sampleConfigValue = sampleConfigValue;
+    logger.info("Constructor SampleSharedBean {}: {}", this, sampleConfigValue);
   }
 
   @EventListener(ApplicationReadyEvent.class)
   public void start() {
-    logger.info("Start SampleSharedBean {}", this, sampleConfigValue);
+    logger.info("Start SampleSharedBean {}: {}", this, sampleConfigValue);
   }
 }
