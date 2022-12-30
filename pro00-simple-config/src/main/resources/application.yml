@@ -1,3 +1,11 @@
 simple:
   valA: aaa
   'valB:': bbb
+
+bean-a:
+  valA: simpleA-valA
+  valB: simpleA-valB
+
+bean-b:
+  valA: simpleB-valA
+  valB: simpleB-valB
