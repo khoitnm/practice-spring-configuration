@@ -5,7 +5,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class Config {
+public class SimpleBeanConfig {
+  // NOTE: prefix must be "bean-a", cannot use "beanA"
   @Bean("beanA")
   @ConfigurationProperties(prefix = "bean-a")
   public SimpleBean beanA() {
